@@ -1,0 +1,254 @@
+Build a next-generation SaaS frontend for an AI-powered SEO automation and digital marketing platform designed specifically for B2B software companies and IT service providers.
+The design must look professionally handcrafted, not AI-generated, and follow all rules below precisely.
+
+Core Design and Style Requirements
+Design Language:
+
+Clean, professional, and corporate feel (like Notion + Linear + Vercel-style design).
+
+Use a monochrome color palette — soft grayscale tones with accent color highlights (e.g., electric blue or teal).
+
+Include light mode and dark mode toggle; make it elegant and consistent.
+
+Avoid generic "AI website" vibes — no floating gradient blobs, neon glows, or cheap font effects.
+
+Use modern minimal typography — fonts like Inter, Manrope, or Poppins.
+
+Carefully balance whitespaces, alignment, and padding — make the layout coherent like a human UX designer built it.
+
+Usability:
+
+Prioritize functional clarity and consistent navigation.
+
+Add hover feedback, smooth animations, and contextual tooltips.
+
+Ensure keyboard accessibility and clean focus states.
+
+Include responsive layout for desktop, tablet, and mobile views.
+
+Frontend Technology Stack
+Framework: Next.js (or React 18 with React Router)
+
+Styling: Tailwind CSS + custom components (NO overused UI kits)
+
+Dark/Light Toggle: Use Tailwind's dark mode support with localStorage preference
+
+Icons: Lucide-react or Heroicons
+
+Fonts: Inter or Poppins from Google Fonts
+
+State Management: Zustand or Context API
+
+Animations: Framer Motion for subtle page transitions
+
+Reusable components: Card, Sidebar, Header, Metric Tile, Drawer, Modal, Table
+
+Make the code clean, structured, and semantically correct
+
+Website Structure (Main Pages & Sections)
+Create a multi-page frontend with sidebar navigation and top navbar.
+Each listed section should have its own JSX page.
+
+1. Dashboard (Home)
+Overview of SEO automation performance and business activity summary.
+
+Cards for quick insights:
+
+Content Generated This Month
+
+Active Marketing Campaigns
+
+Reviews Responded To
+
+Business Activity Graph (Line/Bar chart visualization)
+
+Include a simple KPI chart area (mock data visualization).
+
+Welcome banner: "Welcome back, [UserName]! Here's your business performance overview."
+
+2. Google Business Profile Management
+Subsections:
+
+Profile Overview: Summary of connected Google Business Profile with verification status badge.
+
+Google Posts Creator: Text editor interface with placeholder for AI-generated business updates and promotional posts.
+
+Review Management: List view and reply interface for customer reviews from Google.
+
+3. Content Creation Hub
+Subsections:
+
+AI Content Generator: Section with text input to generate SEO-optimized business articles, service descriptions, and website content.
+
+Keyword Optimizer: Table comparing original content vs AI-optimized content.
+
+Brand Voice Settings: Dropdown setting for tone (professional, friendly, technical, persuasive).
+
+4. Digital Marketing Suite
+Subsections:
+
+Social Media Post Creator: Generate and preview business posts for Instagram, Facebook, LinkedIn, and Twitter.
+
+Product/Service Description Generator: Input area for AI-generated descriptions of software products, IT services, or business solutions.
+
+Ad Copy Generator: Short-form advertising copy templates for Google Ads, Meta Ads, and LinkedIn Ads.
+
+Email Marketing Content: Section with email subject line and body generator with preview.
+
+Video Script Generator: Short promotional video scripts for social media marketing.
+
+Hashtag Research: Industry-specific and trending hashtag recommendations for tech/software businesses.
+
+Social Calendar: Time-based post scheduling interface with calendar view (mock data).
+
+Campaign Templates: Prebuilt marketing campaign templates for product launches, seasonal promotions, and industry events.
+
+5. Local SEO Tools
+Subsections:
+
+Keyword Research: Input interface to generate industry-relevant keyword clusters and search volume data.
+
+Competitor Analysis: Display competitor business data in cards/table format showing online presence metrics.
+
+Maps Optimization: Simple map component showing business location markers and local search rankings.
+
+6. Review Management Center
+Review Monitoring: Dashboard aggregating reviews from Google, Facebook, and industry-specific platforms.
+
+Response Generator: AI-powered text field with editable response suggestions for positive and negative reviews.
+
+Reputation Score: Display overall sentiment score as animated circular progress bar with trend indicators.
+
+7. Analytics & Reports
+Use mock JSON for metrics visualization (charts, bars, line graphs).
+
+Include tabs: SEO Performance, Social Media Engagement, Google Business Insights, Competitor Comparison.
+
+Performance Metrics Dashboard: Show website traffic, conversion rates, and lead generation data.
+
+"Generate Report" button that triggers a mock PDF download of white-label client reports.
+
+8. Human Approval Workflow
+Content Queue Table: Displays all pending AI-generated content awaiting human review and approval.
+
+Editor Dashboard: Split-screen interface — AI-generated version on left, Human-edited version on right with inline editing.
+
+Quality Scores: 5-star rating widget displaying readability, SEO optimization, and brand consistency scores.
+
+Action buttons: "Approve", "Edit & Approve", "Send Back for Revision", "Reject" with feedback textarea popup.
+
+Approval History: Searchable table of all approved/rejected content with timestamps and reviewer names.
+
+9. Client Management
+Client Portal: Table listing all client businesses with profile completeness percentage and account status.
+
+Business Profile Setup: Multi-step modal/form for adding new client businesses with industry selection dropdown.
+
+Team Management: Interface for adding team members, assigning roles (Admin, Editor, Viewer), and access permissions.
+
+Client Billing: Mock subscription tier display and invoice history table with download buttons.
+
+Access Controls: Permission management interface with role-based feature access toggles.
+
+10. AI Settings & Configuration
+Dropdowns and sliders to configure:
+
+AI Model Selection: Choose between different LLM providers (GPT-4, Gemini Pro, Claude)
+
+Prompt Templates: Customizable content generation templates for different business types
+
+Brand Guidelines: Upload brand voice documents and set tone preferences
+
+Integration Management: API key input fields for Google Business Profile, social media platforms
+
+Quality Thresholds: Slider controls for minimum content quality scores before human review
+
+Automation Rules: Configure automatic posting schedules and approval workflows
+
+"Save Changes" CTA button with success confirmation popup.
+
+Include a dark/light themed settings panel with smooth transitions.
+
+UI Layout Structure
+text
+<AppLayout>
+  <Sidebar />   // collapsible navigation with section icons
+  <TopNavbar /> // search bar, notifications bell, profile dropdown, dark/light mode toggle
+  <MainContainer>
+    <Routes>
+      [Include all sections listed above]
+    </Routes>
+  </MainContainer>
+</AppLayout>
+Sidebar Navigation Example:
+
+text
+📊 Dashboard
+🏢 Google Business
+✍️ Content Hub
+📱 Marketing Suite
+🔍 SEO Tools
+⭐ Reviews
+📈 Analytics
+✅ Workflow
+👥 Clients
+⚙️ Settings
+Content Examples for Business Context
+When displaying placeholder/demo data, use generic examples relevant to B2B software and IT service companies:
+
+Sample Content Types:
+
+"Enterprise Software Solutions for Growing Businesses"
+
+"IT Support Services: 24/7 Technical Assistance"
+
+"Cloud-Based Business Management Systems"
+
+"Digital Transformation Consulting Services"
+
+"Software Integration and Implementation Services"
+
+Sample Social Media Posts:
+
+"Streamline your business operations with cutting-edge software solutions"
+
+"Discover how our IT services can transform your workflow efficiency"
+
+"New feature release: Enhanced reporting capabilities for business analytics"
+
+Sample Review Responses:
+
+Response to positive review: "Thank you for choosing our services! We're thrilled to support your business growth."
+
+Response to negative review: "We apologize for the inconvenience. Our support team will reach out within 24 hours to resolve this issue."
+
+General Guidelines
+The website must look human-crafted and visually balanced — avoid repetitive AI-generated patterns.
+
+Design each section with unique personality while maintaining overall consistency.
+
+Ensure semantic and accessible HTML (ARIA labels, logical heading hierarchy, skip links).
+
+Include realistic demo placeholder data for all lists, charts, reports, and tables.
+
+Add smooth transitions and micro-interactions (hover effects, fade-ins, slide animations).
+
+Make the platform feel like it was designed for serious B2B software companies, not generic startups.
+
+Deliverables
+A complete Next.js 15 frontend source folder with clear, professional structure.
+
+Fully responsive layout for desktop, tablet, and mobile devices.
+
+Polished UI consistent across both light and dark themes.
+
+Modular Tailwind CSS classes with custom component library.
+
+Realistic seed data for lists, charts, and analytics dashboards.
+
+Functional dark/light theme toggle working seamlessly across all pages.
+
+Final Instruction for Replit:
+"Generate a full production-ready Next.js 15 + Tailwind CSS frontend for an AI SEO Automation and Digital Marketing SaaS platform targeting B2B software companies and IT service providers. Include dark/light monochrome theme, clean professional corporate layout, and all 10 feature sections listed above with realistic business content examples.
+
+Ensure the design looks handcrafted by an experienced UX designer — not generic AI-generated templates. Prioritize professional aesthetics, intuitive navigation, elegant typography, and cohesive visual hierarchy suitable for enterprise software businesses."
